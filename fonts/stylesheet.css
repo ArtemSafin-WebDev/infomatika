@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'PF Agora Sans Pro';
+    src: url('../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.woff2') format('woff2'),
+    url('../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.woff') format('woff'),
+    url('../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.svg#PFAgoraSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Agora Sans Pro';
+    src: url('../fonts/PFAgoraSansPro-Medium/PFAgoraSansPro-Medium.woff2') format('woff2'),
+    url('../fonts/PFAgoraSansPro-Medium/PFAgoraSansPro-Medium.woff') format('woff'),
+    url('../fonts/PFAgoraSansPro-Medium/PFAgoraSansPro-Medium.svg#PFAgoraSansPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF Agora Serif Pro';
+    src: url('../fonts/PFAgoraSerifPro-Medium/PFAgoraSerifPro-Medium.woff2') format('woff2'),
+    url('../fonts/PFAgoraSerifPro-Medium/PFAgoraSerifPro-Medium.woff') format('woff'),
+    url('../fonts/PFAgoraSerifPro-Medium/PFAgoraSerifPro-Medium.svg#PFAgoraSerifPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF BeauSans Pro';
+    src: url('../fonts/PFBeauSansPro-Light/PFBeauSansPro-Light.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-Light/PFBeauSansPro-Light.woff') format('woff'),
+    url('../fonts/PFBeauSansPro-Light/PFBeauSansPro-Light.svg#PFBeauSansPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF BeauSans Pro';
+    src: url('../fonts/PFBeauSansPro-XThin/PFBeauSansPro-XThin.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-XThin/PFBeauSansPro-XThin.woff') format('woff'),
+    url('../fonts/PFBeauSansPro-XThin/PFBeauSansPro-XThin.svg#PFBeauSansPro-XThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Инфоматика</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+        <link rel="manifest" href="favicons/site.webmanifest" />
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+        <link rel="stylesheet" href="css/libs/slick.css" />
+        <link rel="stylesheet" href="css/libs/slick-theme.css" />
+        <link rel="stylesheet" href="css/libs/animate.css" />
+        <link rel="stylesheet" href="css/libs/jquery.fancybox.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/media.css" />
+    </head>
+
+    <body>
+        <div class="main">
+            <header class="header">
+                <div class="headline">
+                    <div class="wrapper">
+                        <div class="headline__flex">
+                            <div class="headline__column">
+                                <div class="headline__logo t-header">
+                                    <a href="#">
+                                        <img src="img/logo.svg" alt="logo" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="headline__sidebar">
+                                <div class="headline__sidebar-scroll">
+                                    <div class="headline__flex headline__info">
+                                        <div class="headline__column column-menu">
+                                            <div class="top-menu">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <a href="#"><span>О компании</span></a>
+                                                    </li>
+                                                    <li class="is-active">
+                                                        <a href="#"><span>Продукты</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span>Проекты</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span>Новости</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span>Контакты</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="headline__column column-info">
+                                            <div class="headline__search">
+                                                <div class="headline__lang">
+                                                    <a href="#" class="lang">eng</a>
+                                                </div>
+                                                <div class="search-wrapper">
+                                                    <input class="search-input" placeholder="Поиск по сайту" />
+                                                    <div class="search-icon">
+                                                        <i class="icon icon-search"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="headline__phone t-header">
+                                                <a href="tel:88002504406" class="phone">8 800 250-44-06</a>
+                                                <a href="mailto:office@infomatika.ru" class="email">office@infomatika.ru</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-burger mobile-burger">
+                                <span></span>
+                                <span></span>
+                                <!--<span></span>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-wrapper">
+                <!-- <div
+                    class="projects-hello section wow fadeInUpBig"
+                    data-wow-duration="1.25s"
+                    data-wow-delay="0.15s"
+                >
+                    <div class="projects-hello-for">
+                        <div class="projects-hello-for-slider flex">
+                            <div class="projects-hello-for-slide white">
+                                <div
+                                    class="projects-hello-for-bg"
+                                    style="background-image: url('img/projects/hello/bg.jpg')"
+                                ></div>
+                                <div class="wrapper">
+                                    <div class="projects-hello-for__info">
+                                        <span class="type-info"
+                                            >Крупнейшие проекты</span
+                                        >
+                                        <div class="inner-info">
+                                            <h1 class="title-info">
+                                                В рамках проекта “ЕМИАС”,
+                                                компания "Инфоматика"
+                                                разработала и произвела 1800
+                                                специализированных терминалов
+                                            </h1>
+                                            <div class="more-info">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-green"
+                                                    >Подробнее о проекте</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects-hello-for-slide white">
+                                <div
+                                    class="projects-hello-for-bg"
+                                    style="background-image: url('img/projects/hello/bg.jpg')"
+                                ></div>
+                                <div class="wrapper">
+                                    <div class="projects-hello-for__info">
+                                        <span class="type-info"
+                                            >Крупнейшие проекты</span
+                                        >
+                                        <div class="inner-info">
+                                            <h2 class="title-info">
+                                                В рамках проекта “ЕМИАС”,
+                                                компания "Инфоматика"
+                                                разработала и произвела 1800
+                                                специализированных терминалов
+                                            </h2>
+                                            <div class="more-info">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-green"
+                                                    >Подробнее о проекте</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects-hello-for-slide white">
+                                <div
+                                    class="projects-hello-for-bg"
+                                    style="background-image: url('img/projects/hello/bg.jpg')"
+                                ></div>
+                                <div class="wrapper">
+                                    <div class="projects-hello-for__info">
+                                        <span class="type-info"
+                                            >Крупнейшие проекты</span
+                                        >
+                                        <div class="inner-info">
+                                            <h2 class="title-info">
+                                                В рамках проекта “ЕМИАС”,
+                                                компания "Инфоматика"
+                                                разработала и произвела 1800
+                                                специализированных терминалов
+                                            </h2>
+                                            <div class="more-info">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-green"
+                                                    >Подробнее о проекте</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects-hello-for-slide white">
+                                <div
+                                    class="projects-hello-for-bg"
+                                    style="background-image: url('img/projects/hello/bg.jpg')"
+                                ></div>
+                                <div class="wrapper">
+                                    <div class="projects-hello-for__info">
+                                        <span class="type-info"
+                                            >Крупнейшие проекты</span
+                                        >
+                                        <div class="inner-info">
+                                            <h2 class="title-info">
+                                                В рамках проекта “ЕМИАС”,
+                                                компания "Инфоматика"
+                                                разработала и произвела 1800
+                                                специализированных терминалов
+                                            </h2>
+                                            <div class="more-info">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-green"
+                                                    >Подробнее о проекте</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects-hello-for-slide white">
+                                <div
+                                    class="projects-hello-for-bg"
+                                    style="background-image: url('img/projects/hello/bg.jpg')"
+                                ></div>
+                                <div class="wrapper">
+                                    <div class="projects-hello-for__info">
+                                        <span class="type-info"
+                                            >Крупнейшие проекты</span
+                                        >
+                                        <div class="inner-info">
+                                            <h2 class="title-info">
+                                                В рамках проекта “ЕМИАС”,
+                                                компания "Инфоматика"
+                                                разработала и произвела 1800
+                                                специализированных терминалов
+                                            </h2>
+                                            <div class="more-info">
+                                                <a
+                                                    href="#"
+                                                    class="btn btn-green"
+                                                    >Подробнее о проекте</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-hello-nav">
+                        <div class="wrapper">
+                            <div
+                                class="projects-hello-nav__row row row-items projects-hello-nav-slider"
+                            >
+                                <div
+                                    class="projects-hello-nav__column row-column column-item projects-hello-nav-slide"
+                                >
+                                    <div class="projects-hello-nav__item">
+                                        <div class="item-img">
+                                            <img
+                                                src="img/projects/hello/nav/img-1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc-item">ЕМИАС г. Москва</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="projects-hello-nav__column row-column column-item projects-hello-nav-slide"
+                                >
+                                    <div class="projects-hello-nav__item">
+                                        <div class="item-img">
+                                            <img
+                                                src="img/projects/hello/nav/img-2.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc-item">
+                                            Электронный Татарстан
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="projects-hello-nav__column row-column column-item projects-hello-nav-slide"
+                                >
+                                    <div class="projects-hello-nav__item">
+                                        <div class="item-img">
+                                            <img
+                                                src="img/projects/hello/nav/img-3.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc-item">
+                                            XXVII Всемирная летняя Универсиада
+                                            2013
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="projects-hello-nav__column row-column column-item projects-hello-nav-slide"
+                                >
+                                    <div class="projects-hello-nav__item">
+                                        <div class="item-img">
+                                            <img
+                                                src="img/projects/hello/nav/img-4.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc-item">
+                                            Казанский метрополитен
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="projects-hello-nav__column row-column column-item projects-hello-nav-slide"
+                                >
+                                    <div class="projects-hello-nav__item">
+                                        <div class="item-img">
+                                            <img
+                                                src="img/projects/hello/nav/img-5.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc-item">
+                                            Чемпионат мира по футболу FIFA 2018
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="projects-main-slider section wow fadeInUpBig" data-wow-duration="1.25s" data-wow-delay="0.15s">
+                    <div class="projects-main-slider__sliders js-projects-main-slider">
+                        <div class="projects-main-slider__thumbs">
+                            <h3 class="projects-main-slider__thumbs-heading">
+                                Крупнейшие проекты
+                            </h3>
+                            <div class="projects-main-slider__thumbs-wrapper">
+                                <button class="projects-main-slider__btn projects-main-slider__btn--prev">
+                                    <span class="projects-main-slider__btn-content"> </span>
+                                </button>
+                                <div class="projects-main-slider__thumbs-slider-container">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="projects-main-slider__thumbs-card">
+                                                    <div class="projects-main-slider__thumbs-card-image-container">
+                                                        <img src="img/projects/hello/nav/emias.jpg" alt="" class="projects-main-slider__thumbs-card-image" />
+                                                    </div>
+                                                    <h5 class="projects-main-slider__thumbs-card-title">
+                                                        ЕМИАС, г. Москва
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="projects-main-slider__thumbs-card">
+                                                    <div class="projects-main-slider__thumbs-card-image-container">
+                                                        <img src="img/projects/hello/nav/img-2.png" alt="" class="projects-main-slider__thumbs-card-image" />
+                                                    </div>
+                                                    <h5 class="projects-main-slider__thumbs-card-title">
+                                                        Электронный Татарстан
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="projects-main-slider__thumbs-card">
+                                                    <div class="projects-main-slider__thumbs-card-image-container">
+                                                        <img src="img/projects/hello/nav/universiade.png" alt="" class="projects-main-slider__thumbs-card-image" />
+                                                    </div>
+                                                    <h5 class="projects-main-slider__thumbs-card-title">
+                                                        XXVII Всемирная летняя Универсиада 2013 г.
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="projects-main-slider__thumbs-card">
+                                                    <div class="projects-main-slider__thumbs-card-image-container">
+                                                        <img src="img/projects/hello/nav/metro.png" alt="" class="projects-main-slider__thumbs-card-image" />
+                                                    </div>
+                                                    <h5 class="projects-main-slider__thumbs-card-title">
+                                                        Казанский метрополитен
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="projects-main-slider__thumbs-card">
+                                                    <div class="projects-main-slider__thumbs-card-image-container">
+                                                        <img src="img/projects/hello/nav/fina.png" alt="" class="projects-main-slider__thumbs-card-image" />
+                                                    </div>
+                                                    <h5 class="projects-main-slider__thumbs-card-title">
+                                                        XVI Чемпионат мира ФИНА по водным видам спорта 2015 г.
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="projects-main-slider__btn projects-main-slider__btn--next">
+                                    <span class="projects-main-slider__btn-content"> </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projects-main-slider__main">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="projects-main-slider__card">
+                                            <img src="img/projects/hello/bg.jpg" alt="Картинка слайда" class="projects-main-slider__card-image" />
+                                            <h3 class="projects-main-slider__card-heading">
+                                                ЕМИАС, г. Москва
+                                            </h3>
+                                            <a href="#" class="projects-main-slider__card-btn btn btn-green">Подробнее о проекте</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects-main-slider__card">
+                                            <img src="img/projects/hello/bg.jpg" alt="Картинка слайда" class="projects-main-slider__card-image" />
+                                            <h3 class="projects-main-slider__card-heading">
+                                                Электронный Татарстан
+                                            </h3>
+                                            <a href="#" class="projects-main-slider__card-btn btn btn-green">Подробнее о проекте</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects-main-slider__card">
+                                            <img src="img/projects/hello/bg.jpg" alt="Картинка слайда" class="projects-main-slider__card-image" />
+                                            <h3 class="projects-main-slider__card-heading">
+                                                XXVII Всемирная летняя<br />
+                                                Универсиада 2013 г.
+                                            </h3>
+                                            <a href="#" class="projects-main-slider__card-btn btn btn-green">Подробнее о проекте</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects-main-slider__card">
+                                            <img src="img/projects/hello/bg.jpg" alt="Картинка слайда" class="projects-main-slider__card-image" />
+                                            <h3 class="projects-main-slider__card-heading">
+                                                Казанский метрополитен
+                                            </h3>
+                                            <a href="#" class="projects-main-slider__card-btn btn btn-green">Подробнее о проекте</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="projects-main-slider__card">
+                                            <img src="img/projects/hello/bg.jpg" alt="Картинка слайда" class="projects-main-slider__card-image" />
+                                            <h3 class="projects-main-slider__card-heading">
+                                                XVI Чемпионат мира ФИНА<br />
+                                                по водным видам спорта<br />
+                                                2015 г.
+                                            </h3>
+                                            <a href="#" class="projects-main-slider__card-btn btn btn-green">Подробнее о проекте</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-slider section wow fadeInUpBig" data-wow-duration="1.25s" data-wow-delay="0.35s">
+                    <div class="wrapper">
+                        <div class="logo-slider__content">
+                            <h2 class="logo-slider__main-heading">
+                                слайдер с логотипами
+                            </h2>
+                            <p class="logo-slider__main-text">
+                                20 мая 2019 г. в Казани состоялась церемония открытия финала VII Национального чемпионата "Молодые профессионалы" (WorldSkills Russia) - крупнейшего соревнования профессионального мастерства.
+                            </p>
+                            <p class="logo-slider__secondary-text">
+                                Три дня подряд студенты средних профессиональных образовательных учреждений, сражаются за звание лучших молодых специалистов в стране. На площадках представлена 91 компетенция, 23 из которых - высокотехнологичные
+                                компетенции блока Future Skills ("профессии будущего").
+                            </p>
+                        </div>
+                        <div class="logo-slider__slider js-logo-slider">
+                            <button class="logo-slider__button logo-slider__button--prev">
+                                <svg width="12" height="19" viewBox="0 0 12 19" f fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.123 2.31L4.24555 9.1875L11.123 16.065L9.00055 18.1875L0.000545502 9.1875L9.00055 0.1875L11.123 2.31Z" />
+                                </svg>
+                            </button>
+                            <div class="logo-slider__slider-wrapper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#" class="logo-slider__card">
+                                                <div class="logo-slider__card-image-container">
+                                                    <img src="img/logo-slider/zaradye.png" alt="" class="logo-slider__card-image" />
+                                                </div>
+                                                <h5 class="logo-slider__card-title">
+                                                    Название компании текстом
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="logo-slider__card">
+                                                <div class="logo-slider__card-image-container">
+                                                    <img src="img/logo-slider/my-history.png" alt="" class="logo-slider__card-image" />
+                                                </div>
+                                                <h5 class="logo-slider__card-title">
+                                                    Название компании текстом
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="logo-slider__card">
+                                                <div class="logo-slider__card-image-container">
+                                                    <img src="img/logo-slider/sviyazhsk.png" alt="" class="logo-slider__card-image" />
+                                                </div>
+                                                <h5 class="logo-slider__card-title">
+                                                    Название компании текстом
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="logo-slider__card">
+                                                <div class="logo-slider__card-image-container">
+                                                    <img src="img/logo-slider/bolgar.png" alt="" class="logo-slider__card-image" />
+                                                </div>
+                                                <h5 class="logo-slider__card-title">
+                                                    Название компании текстом
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="logo-slider__card">
+                                                <div class="logo-slider__card-image-container">
+                                                    <img src="img/logo-slider/panorama.png" alt="" class="logo-slider__card-image" />
+                                                </div>
+                                                <h5 class="logo-slider__card-title">
+                                                    Название компании текстом
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="logo-slider__card">
+                                                <div class="logo-slider__card-image-container">
+                                                    <img src="img/logo-slider/ekiyat.png" alt="" class="logo-slider__card-image" />
+                                                </div>
+                                                <h5 class="logo-slider__card-title">
+                                                    Название компании текстом
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="logo-slider__card">
+                                                <div class="logo-slider__card-image-container">
+                                                    <img src="img/logo-slider/teatr.png" alt="" class="logo-slider__card-image" />
+                                                </div>
+                                                <h5 class="logo-slider__card-title">
+                                                    Название компании текстом
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="logo-slider__card">
+                                                <div class="logo-slider__card-image-container">
+                                                    <img src="img/logo-slider/ekiyat.png" alt="" class="logo-slider__card-image" />
+                                                </div>
+                                                <h5 class="logo-slider__card-title">
+                                                    Название компании текстом
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#" class="logo-slider__card">
+                                                <div class="logo-slider__card-image-container">
+                                                    <img src="img/logo-slider/teatr.png" alt="" class="logo-slider__card-image" />
+                                                </div>
+                                                <h5 class="logo-slider__card-title">
+                                                    Название компании текстом
+                                                </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="logo-slider__button logo-slider__button--next">
+                                <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.876953 16.69L7.75445 9.8125L0.876953 2.935L2.99945 0.8125L11.9995 9.8125L2.99945 18.8125L0.876953 16.69Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="combination section wow fadeInUpBig" data-wow-duration="1.25s" data-wow-delay="0.35s">
+                    <div class="wrapper">
+                        <img src="img/combination/combination.jpg" alt="" class="combination__background" />
+                        <div class="combination__content">
+                            <h4 class="combination__heading">
+                                Комбинация компетенций
+                            </h4>
+                            <div class="combination__text">
+                                <p>
+                                    Возможность разработки совершенно новых продуктов и участие в нестандартных масштабных проектах. Мы обладаем всей производственной цепочкой для разработки, реализации и поддержки инновационных проектов.
+                                    <a href="#">Универсиада 2013</a>, <a href="">ПАК «Привратник»</a>, <a href="#">«Кампусный проект МГУ»</a> и множество других проектов – результат применения вышеперечисленных компетенций.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-category section wow fadeInUpBig" data-wow-duration="1.25s" data-wow-delay="0.35s">
+                    <div class="wrapper">
+                        <div class="projects-category__row row">
+                            <div class="projects-category__column row-column">
+                                <div class="projects-category__item type-1">
+                                    <a href="#" class="item-img">
+                                        <img src="img/projects/category/type-1.png" alt="" />
+                                    </a>
+                                    <h3 class="title-item">
+                                        <a href="#">Билетно-пропускные системы <i class="icon icon-title"></i></a>
+                                    </h3>
+                                    <div class="category-item">
+                                        <h5 class="title-category">
+                                            Для спортивных объектов 23
+                                        </h5>
+                                        <ul class="list-item projects-category__toggle-list is-hide">
+                                            <li>
+                                                <a href="#">Стадион «Казань-Арена», г. Казань</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Стадион «Нефтяник», г. Уфа</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Дворец спорта «Мегаспорт», г. Москва</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Стадион «Казань-Арена», г. Казань</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Стадион «Нефтяник», г. Уфа</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Дворец спорта «Мегаспорт», г. Москва</a>
+                                            </li>
+                                        </ul>
+                                        <div class="more-item">
+                                            <button type="button" class="btn projects-category__toggle-btn" data-before-action="Посмотреть больше" data-after-action="Свернуть">
+                                                Посмотреть больше
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="category-item">
+                                        <h5 class="title-category">
+                                            Для спортивных объектов 23
+                                        </h5>
+                                        <ul class="list-item">
+                                            <li>
+                                                <a href="#">ХК «Локомотив», г. Ярославль</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">ПХК «ЦСКА», г.Москва</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">ХК «Салават Юлаев»,г.Уфа</a>
+                                            </li>
+                                        </ul>
+                                        <div class="more-item">
+                                            <a href="#" class="btn">Посмотреть все проекты</a>
+                                        </div>
+                                    </div>
+                                    <div class="category-item">
+                                        <h5 class="title-category">
+                                            Для спортивных объектов 23
+                                        </h5>
+                                        <ul class="list-item">
+                                            <li>
+                                                <a href="#">Билетный оператор «Билетон»</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Билетный сервис сети ресторанов «Максимилианс»</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">«Билетный сервис Рамблер/»</a>
+                                            </li>
+                                        </ul>
+                                        <div class="more-item">
+                                            <a href="#" class="btn">Посмотреть все проекты</a>
+                                        </div>
+                                    </div>
+                                    <div class="category-item">
+                                        <h5 class="title-category">
+                                            Для спортивных объектов 23
+                                        </h5>
+                                        <ul class="list-item">
+                                            <li>
+                                                <a href="#">Билетный проект Республики Татарстан</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Парк «Зарядье», г. Москва</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Исторический парк «Россия - моя история», г. Уфа</a>
+                                            </li>
+                                        </ul>
+                                        <div class="more-item">
+                                            <a href="#" class="btn">Посмотреть все проекты</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects-category__column row-column">
+                                <div class="projects-category__item type-2">
+                                    <a href="#" class="item-img">
+                                        <img src="img/projects/category/type-2.png" alt="" />
+                                    </a>
+                                    <h3 class="title-item">
+                                        <a href="#">Система контроля оплаты проезда для транспорта <i class="icon icon-title"></i></a>
+                                    </h3>
+                                    <ul class="list-item">
+                                        <li>
+                                            <a href="#">Казанский метрополитен</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="projects-category__item type-1">
+                                    <a href="#" class="item-img">
+                                        <img src="img/projects/category/type-3.png" alt="" />
+                                    </a>
+                                    <h3 class="title-item">
+                                        <a href="#">Кампусные проекты <i class="icon icon-title"></i></a>
+                                    </h3>
+                                    <ul class="list-item">
+                                        <li>
+                                            <a href="#">Кампусный проект МГУ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Кампусный проект КГМУ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="projects-category__item type-2">
+                                    <a href="#" class="item-img">
+                                        <img src="img/projects/category/type-4.png" alt="" />
+                                    </a>
+                                    <h3 class="title-item">
+                                        <a href="#">Cистемы электронной очереди и информационно-платежные терминалы <i class="icon icon-title"></i></a>
+                                    </h3>
+                                    <ul class="list-item">
+                                        <li>
+                                            <a href="#">Инфоматы для образовательных учреждений г.Москвы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">УФМС Республики Татарстан</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Отделения ГИБДД РТ</a>
+                                        </li>
+                                    </ul>
+                                    <div class="more-item">
+                                        <a href="#" class="btn">Посмотреть все проекты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="target-contacts" class="contacts-form section">
+                    <div class="wrapper">
+                        <div class="form-contacts static">
+                            <div class="inner-form">
+                                <div class="figure figure-line">
+                                    <img src="img/contacts-form/figure-1.svg" alt="" />
+                                </div>
+                                <div class="form-contacts__row row">
+                                    <div class="form-contacts__column row-column">
+                                        <div class="info-contacts">
+                                            <div class="headline__typical chief__typical h3">
+                                                <h3>
+                                                    Оставьте заявку и получите консультацию по интеграции БС “Лента-Музей”
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-contacts__column row-column">
+                                        <form action="/" method="post" name="contactsForm" class="form">
+                                            <div class="form-group">
+                                                <input name="name" class="form-control" placeholder="Ваше имя" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input name="phone" type="tel" class="form-control phone-mask" placeholder="Номер телефона" />
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control select">
+                                                    <option>Тема запроса</option>
+                                                    <option>Тема запроса 2</option>
+                                                    <option>Тема запроса 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea rows="4" class="form-control" placeholder="Текст запроса"></textarea>
+                                            </div>
+                                            <div class="form-group form-bottom">
+                                                <div class="inp-checkbox static">
+                                                    <input type="checkbox" name="form_checkbox" id="callback_checkbox1" checked />
+                                                    <label for="callback_checkbox1">
+                                                        <span class="checkbox__box"></span>
+                                                        Согласен с условиями обработки персональных данных
+                                                    </label>
+                                                </div>
+                                                <button class="btn btn-green">
+                                                    Оставить заявку
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-top">
+                    <div class="wrapper">
+                        <div class="footer__row">
+                            <div class="footer__column column-info">
+                                <div class="headline__logo t-footer">
+                                    <a href="#">
+                                        <img src="img/logo.svg" alt="logo" />
+                                    </a>
+                                </div>
+                                <div class="footer__contacts">
+                                    <div class="headline__phone t-footer">
+                                        <a href="tel:88002504406" class="phone">8 800 250-44-06</a>
+                                    </div>
+                                    <a href="mailto:office@infomatika.ru" class="email">office@infomatika.ru</a>
+                                </div>
+                            </div>
+                            <div class="footer__column column-menu">
+                                <div class="footer__row row-menu">
+                                    <div class="footer__column">
+                                        <div class="footer-menu">
+                                            <ul class="list-unstyled">
+                                                <li class="title-menu">
+                                                    <a href="#">О компании</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Общая информация</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Сертификаты</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Благодарственные письма</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Вакансии</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакты</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer__column">
+                                        <div class="footer-menu">
+                                            <ul class="list-unstyled">
+                                                <li class="title-menu">
+                                                    <a href="#">Продукты</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Терминалы и интерактивное оборудование</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">билетно-пропускные системы "Лента"</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Турникеты</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">АСКОП "Транспорт"</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Прочее оборудование</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer__column">
+                                        <div class="footer-menu">
+                                            <ul class="list-unstyled">
+                                                <li class="title-menu">
+                                                    <a href="#">Проекты</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Билетно-пропускные системы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Системы электронной очереди и информационно-платежные терминалы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Кампусные проекты</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer__column">
+                                        <div class="footer-menu">
+                                            <ul class="list-unstyled">
+                                                <li class="title-menu">
+                                                    <a href="#">Новости</a>
+                                                </li>
+                                                <li class="title-menu">
+                                                    <a href="#">Контакты</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="wrapper">
+                        <div class="footer__row">
+                            <div class="footer__column">
+                                <div class="footer-copyright">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">Политика конфиденциальности</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Вакансии</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__column">
+                                <p class="footer__developers">
+                                    <span class="title">Создание сайта —</span>
+                                    <a href="#" target="_blank" class="developer"><img src="img/mark-weber.svg" alt=""/></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/libs/jquery.min.js"></script>
+        <script src="js/libs/slick.min.js"></script>
+        <script src="js/libs/jquery.validate.min.js"></script>
+        <script src="js/libs/jquery.mask.min.js"></script>
+        <script src="js/validation.js"></script>
+        <script src="js/mask.js"></script>
+        <script src="js/libs/bideo.js"></script>
+        <script src="js/video.js"></script>
+        <script src="js/libs/wow.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

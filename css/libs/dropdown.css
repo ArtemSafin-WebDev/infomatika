@@ -1,0 +1,128 @@
+.dropdown:not(.open) > .dropdown-menu {
+    opacity: 0;
+    z-index: -1;
+}
+
+.dropdown.open > .dropdown-menu {
+    opacity: 1;
+    z-index: 99;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border: 0;
+    transition: 0.25s ease-in-out;
+    width: 100%;
+    overflow: hidden;
+    margin: 15px 0 0;
+}
+
+.dropdown:not(.white) .dropdown-menu {
+    background-color: #F3F4FE;
+}
+
+.dropdown.white .dropdown-menu {
+    background-color: #ffffff;
+}
+
+.dropdown-menu {
+    border-radius: 5px;
+    /*border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
+    padding: 0;
+}
+
+.dropdown-menu > li {
+    padding: 12px 21px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.dropdown:not(.white) .dropdown-menu > li {
+    color: #262626;
+}
+
+.dropdown.white .dropdown-menu > li {
+    color: #262626;
+}
+
+.dropdown:not(.white) .dropdown-menu > li:hover {
+    background-color: #003F76;
+    color: #ffffff;
+}
+
+.dropdown.white .dropdown-menu > li:hover {
+    background-color: #F3F4FE;
+    color: #003F76;
+}
+
+.dropdown-menu > li,
+.dropdown-menu > li > a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*.dropdown.open > .dropdown__label {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}*/
+
+.dropdown.open .dropdown__icon {
+    transform: rotate(-180deg);
+}
+
+.dropdown__label {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    line-height: 1.42857143;
+    letter-spacing: 0.5px;
+    padding: 0 0 15px;
+    transition: 0.25s ease-in-out;
+}
+
+.dropdown:not(.white) .dropdown__label {
+    border: 3px solid #E6E6E6;
+    border-width: 0 0 3px;
+    color: #262626;
+}
+
+.dropdown.white .dropdown__label {
+    border: 3px solid #ffffff;
+    border-width: 0 0 3px;
+    color: #ffffff;
+}
+
+.dropdown__label:focus {
+    outline: none;
+}
+
+.dropdown:not(.white) .dropdown__label:focus {
+    border-bottom-color: #003F76;
+}
+
+.dropdown.white .dropdown__label:focus {
+    border-bottom-color: #ffffff;
+}
+
+.dropdown__label,
+.dropdown__value {
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown__icon {
+    position: absolute;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/icons/select-arrow.svg");
+    transition: 0.25s ease-in-out;
+}

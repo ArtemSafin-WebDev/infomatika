@@ -1,0 +1,2 @@
+# infomatika
+infomatoka
