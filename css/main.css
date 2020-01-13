@@ -4,8 +4,15 @@
 }
 
 
+.logo-slider__card--grayscale img {
+    filter: grayscale(100%);
+    transition: filter .2s linear;
+}
 
 
+.logo-slider__card--grayscale:hover img {
+    filter: grayscale(0);
+}
 
 
 @media screen and (max-width: 1440px) {
