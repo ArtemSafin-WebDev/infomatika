@@ -1,4 +1,24 @@
 
+.show-all-btn.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility 0s linear .3s;
+}
+
+
+.show-all-hidden-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all .3s;
+}
+
+.show-all-buttons-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .headline__logo img {
     width: 256px;
 }

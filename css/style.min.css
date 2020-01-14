@@ -3283,6 +3283,7 @@ select[multiple].input-lg, textarea.input-lg {
     transition: 0.25s ease-in-out;
     border-radius: 10px;
     padding: 13px 23px;
+    padding-bottom: 10px;
 }
 
 .btn:not(.btn-bold) {
@@ -3341,6 +3342,9 @@ a.btn.disabled, fieldset[disabled] a.btn {
     color: #ffffff;
     background-color: #F2BF2D;
 }
+
+
+
 
 .btn-yellow:hover {
     background-color: #1d62a6;
