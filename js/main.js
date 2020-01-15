@@ -1079,13 +1079,13 @@ $(function() {
         console.log('Offset height', offsetHeight);
 
         setTimeout(() => {
-			const transitionEndHandler = () => {
-				console.log('Tranisitionnd Initiated');
-				element.style.maxHeight = "none";
-				element.removeEventListener('transitionend', transitionEndHandler);
-			}
-			element.addEventListener("transitionend", transitionEndHandler);
-			element.style.maxHeight = `${computedHeight}`;
+            const transitionEndHandler = () => {
+                console.log('Tranisitionnd Initiated');
+                element.style.maxHeight = 'none';
+                element.removeEventListener('transitionend', transitionEndHandler);
+            };
+            element.addEventListener('transitionend', transitionEndHandler);
+            element.style.maxHeight = `${computedHeight}`;
         }, 20);
     }
 
@@ -1094,9 +1094,32 @@ $(function() {
             event.preventDefault();
             const container = btn.closest('.type-project__info');
             if (!container) return;
-			const content = container.querySelector('.show-all-hidden-content');
-			openAccordeon(content);
-			btn.classList.add('hidden');
+            const content = container.querySelector('.show-all-hidden-content');
+            openAccordeon(content);
+            btn.classList.add('hidden');
         });
+    });
+
+    // tabs with icons
+
+    const tabsWithIcons = Array.from(document.querySelectorAll('.tabs-with-icons__tabs'));
+
+    tabsWithIcons.forEach(tab => {
+        const controls = Array.from(tab.querySelectorAll(':scope .tabs-with-icons__tabs-navigation a'));
+        const tabItems = Array.from(tab.querySelectorAll(':scope .tabs-with-icons__items .tabs-with-icons__item'));
+        console.log(controls);
+        controls[0].classList.add('active');
+        tabItems[0].classList.add('active');
+        
+        controls.forEach((btn, index) => {
+            btn.addEventListener('click', function(event) {
+                event.preventDefault();
+                controls.forEach(item => item.classList.remove('active'));
+                tabItems.forEach(item => item.classList.remove('active'));
+
+                controls[index].classList.add('active');
+                tabItems[index].classList.add('active');
+            })
+        })
     });
 });
