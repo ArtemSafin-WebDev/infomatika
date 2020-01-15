@@ -1,3 +1,82 @@
+
+.production-competencies__heading {
+    margin-bottom: 30px;
+}
+
+
+.production-competencies__large-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin-bottom: 40px;
+}
+
+.production-competencies__small-text {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+
+
+.production-competencies__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin: -5px;
+}
+
+
+.production-competencies__list-item {
+    padding: 0;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+
+
+.production-competencies__card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: #E6F3FF;
+    padding: 40px 35px;
+    border-top: 5px solid currentColor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #005BAA;
+}
+
+.production-competencies__card-title {
+    color: black;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+    margin: 0;
+    margin-bottom: 15px;
+    min-height: 62px;
+}
+
+
+.production-competencies__card-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    fill: currentColor;
+}
+
+
+.production-competencies__card-text {
+    color: rgba(0, 0, 0, .6);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
 .advantages-2__heading {
     margin-bottom: 40px;
 }
@@ -206,12 +285,32 @@
     .advantages-2__list-item {
         width: 50%;
     }
+
+
+    .production-competencies__list-item {
+        width: 50%;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
     .advantages-2__list-item {
         width: 100%;
+    }
+
+
+    .production-competencies__list-item {
+        width: 100%;
+    }
+
+
+    .production-competencies__card-title {
+        min-height: auto;
+    }
+
+
+    .production-competencies__card {
+        padding: 25px 20px;
     }
 }
 
@@ -285,6 +384,33 @@
 
 
     .advantages-2__text {
+        font-size: 16px;
+        line-height: 1.33;
+    }
+
+
+
+    .production-competencies__large-text {
+        font-size: 18px;
+        line-height: 1.33;
+        margin-bottom: 20px;
+    }
+
+
+    .production-competencies__small-text {
+        font-size: 16px;
+        line-height: 1.33;
+        margin-bottom: 30px;
+    }
+
+
+    .production-competencies__card-title {
+        font-size: 22px;
+        line-height: 1.33;
+    }
+
+
+    .production-competencies__card-text {
         font-size: 16px;
         line-height: 1.33;
     }
