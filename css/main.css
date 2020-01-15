@@ -846,6 +846,7 @@
     border-radius: 12px;
     margin: 10px 0 0;
     padding: 22px 74px 64px 30px;
+    padding-bottom: 22px;
     -webkit-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
 }
