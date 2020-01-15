@@ -1,3 +1,60 @@
+
+.modal-functions__heading {
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 41px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+
+.modal-functions__list {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.modal-functions__list .modal-functions__list {
+    margin-top: 5px;
+}
+
+.modal-functions__list-item {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 5px;
+    font-family: 'PF Agora Sans Pro';
+    font-size: 18px;
+    line-height: 1.33;
+    color: #666666;
+}
+
+
+.modal-functions__list-item:last-child {
+    margin-bottom: 0;
+}
+
+
+.modal-functions__list-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:  7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #82B452;
+}
+
+
+
+.modal-functions__link {
+    margin-top: 35px;
+}
+
 .animated-icon-container {
     position: relative;
     width: 70%;
@@ -537,6 +594,16 @@
     .production-competencies__card-text {
         font-size: 16px;
         line-height: 1.33;
+    }
+
+
+    .modal-functions__heading {
+        font-size: 30px;
+    }
+
+
+    .modal-functions__list-item {
+        font-size: 16px;
     }
 }
 
