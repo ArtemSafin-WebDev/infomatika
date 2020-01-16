@@ -1,3 +1,6 @@
+
+
+
 .accordions__heading {
     margin-bottom: 30px;
 }
@@ -4103,7 +4106,9 @@ body.full-main .competencies:not(:last-child) {
     -ms-flex-pack: start;
     justify-content: flex-start;
     /*max-width: 1060px;*/
-    margin: -25px -30px 0;
+    /* margin: -25px -30px 0; */
+
+    margin: -10px -20px;
 }
 
 .main-hello__project .count-project {
@@ -4120,7 +4125,8 @@ body.full-main .competencies:not(:last-child) {
 }
 
 .main-hello__project .count-project {
-    margin: 25px 30px 0;
+    /* margin: 25px 30px 0; */
+    padding: 10px 20px;
 }
 
 .main-hello__project .count-project > *:not(.desc) {

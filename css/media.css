@@ -2800,6 +2800,7 @@
 
     .main-hello__project .desc-project {
         font-size: 18px;
+        margin-bottom: 20px;
     }
 
     /*.main-hello__project .count-project {
@@ -2807,7 +2808,7 @@
     }*/
 
     .main-hello__project .count-project .desc {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .main-hello-slider .slick-prev {
@@ -4701,3 +4702,21 @@
         display: none;
     }
 }
+
+
+
+@media screen and (max-width: 1440px) {
+    .main-hello__project .count-project .count {
+        font-size: 65px;
+    }
+}
+@media screen and (min-width: 1441px) {
+    .main-hello__project .count-project .count {
+        font-size: 75px;
+    }
+
+    .main-hello__project .count-project .desc {
+        font-size: 18px;
+    }
+}
+
