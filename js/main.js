@@ -887,40 +887,44 @@ $(function() {
 
     // tasks more
 
-    if ($('*').is('.tasks-project__more')) {
-        var tasksProjectMore = $('.tasks-project__more');
-        var tasksProjectMoreParent = tasksProjectMore.parent();
-        var tasksProjectItems = $('.tasks-project__items');
-        var tasksProjectItemsHeight = tasksProjectItems.height();
-        var maxHeightTasks = tasksProjectMoreParent.position().top + tasksProjectMore.innerHeight() + 10;
+    const taskProjectMoreBtns = Array.from(document.querySelectorAll('.tasks-project__more'));
 
-        tasksProjectItems.css({
-            maxHeight: maxHeightTasks
-        });
+    taskProjectMoreBtns.forEach(btn => {
+        const parentElement = btn.parentElement;
+        const container = parentElement.parentElement;
+        const children = Array.from(container.children);
+        const btnIndex = children.indexOf(parentElement);
+        const btnTextContainer = btn.querySelector('.desc-more span');
+        const btnInitialText = btn.getAttribute('data-before-action') || btnTextContainer.textContent;
+        const btnNewText = btn.getAttribute('data-after-action') || 'Свернуть обратно';
 
-        tasksProjectMore.on('click', function() {
-            var _this = $(this);
-            if (!tasksProjectItems.hasClass('is-open')) {
-                tasksProjectItems.addClass('is-open');
-                tasksProjectItems.stop().animate(
-                    {
-                        maxHeight: tasksProjectItemsHeight
-                    },
-                    750
-                );
-                _this.find('span').text(_this.attr('data-after-action'));
-            } else {
-                tasksProjectItems.removeClass('is-open');
-                tasksProjectItems.stop().animate(
-                    {
-                        maxHeight: maxHeightTasks
-                    },
-                    750
-                );
-                _this.find('span').text(_this.attr('data-before-action'));
+        let hiddenAccordions = [];
+
+        children.forEach((child, index) => {
+            if (index > btnIndex) {
+                child.classList.add('accordion-hidden');
+                hiddenAccordions.push(child);
             }
         });
-    }
+
+        btn.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (parentElement.classList.contains('accordion-btn-active')) {
+                hiddenAccordions.forEach(accordion => {
+                    closeAccordeon(accordion);
+                });
+                btnTextContainer.textContent = btnInitialText;
+            } else {
+                hiddenAccordions.forEach(accordion => {
+                    openAccordeon(accordion);
+                });
+                btnTextContainer.textContent = btnNewText;
+            }
+            parentElement.classList.toggle('accordion-btn-active');
+        });
+
+       
+    });
 
     // project details
 
@@ -1068,20 +1072,17 @@ $(function() {
 
     function openAccordeon(element) {
         element.style.maxHeight = 'none';
-        element.style.overflow = 'visible';
+        // element.style.overflow = 'visible';
         const computedStyle = getComputedStyle(element);
         const computedHeight = computedStyle.height;
 
-       
         element.style.maxHeight = '';
-        element.style.overflow = '';
-
-        
+        // element.style.overflow = '';
 
         setTimeout(() => {
             const transitionEndHandler = () => {
                 console.log('Tranisitionnd Initiated');
-                element.style.maxHeight = 'auto';
+                element.style.maxHeight = 'none';
                 element.removeEventListener('transitionend', transitionEndHandler);
             };
             element.addEventListener('transitionend', transitionEndHandler);
@@ -1090,8 +1091,15 @@ $(function() {
     }
 
     function closeAccordeon(element) {
-        element.style.maxHeight = '';
-        element.style.overflow = '';
+        const computedStyle = getComputedStyle(element);
+        const computedHeight = computedStyle.height;
+
+        element.style.maxHeight = `${computedHeight}`;
+
+        setTimeout(() => {
+            element.style.maxHeight = '';
+            // element.style.overflow = '';
+        }, 20);
     }
 
     showAllBtns.forEach(btn => {

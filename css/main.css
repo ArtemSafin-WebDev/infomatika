@@ -1,4 +1,29 @@
 
+.tasks-project__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks-project__item {
+    flex-grow: 1;
+}
+
+
+
+.accordion-hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+
+/* .accordion-btn-active {
+    order: 10;
+} */
+
+.accordion-btn-active .icon-more {
+    transform: rotate(-180deg);
+}
 
 
 .accordions__heading {
