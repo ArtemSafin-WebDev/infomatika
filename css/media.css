@@ -4720,3 +4720,16 @@
     }
 }
 
+
+
+.hello__flex--new {
+    padding-bottom: 52px;
+    padding-top: 150px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .hello__flex--new {
+        padding-bottom: 0px;
+    }
+}

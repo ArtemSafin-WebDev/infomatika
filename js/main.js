@@ -1133,7 +1133,7 @@ $(function() {
         console.log(controls);
         controls[0].classList.add('active');
         tabItems[0].classList.add('active');
-
+        
         controls.forEach((btn, index) => {
             btn.addEventListener('click', function(event) {
                 event.preventDefault();
