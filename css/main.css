@@ -588,17 +588,17 @@
 @keyframes shake-drill {
     0%,
     25% {
-        transform: translateX(-1%);
+        transform: translateX(-0.5%);
     }
     50%,
     100% {
-        transform: translateX(1%);
+        transform: translateX(0.5%);
     }
 }
 
 .animated-icon-container--drill img:nth-child(2) {
     animation-name: shake-drill;
-    animation-duration: 0.06s;
+    animation-duration: 0.09s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-play-state: paused;
@@ -635,21 +635,20 @@
 @keyframes ticket-slide {
     0% {
         opacity: 1;
-        transform: translate(0, 0);
+        transform: translate(12%, -18%);
     }
 
-    20% {
+    80% {
         opacity: 1;
-        transform: translate(0, 0);
     }
 
     100% {
         opacity: 0;
-        transform: translate(-15%, 15%);
+        transform: translate(0, 0);
     }
 }
 
-.competencies-nav__item:hover .animated-icon-container--ticket img:nth-child(2) {
+.competencies-nav__item:hover .animated-icon-container--ticket img:nth-child(3) {
     animation-name: ticket-slide;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
