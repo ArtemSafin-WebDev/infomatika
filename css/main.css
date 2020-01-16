@@ -648,6 +648,11 @@
     }
 }
 
+
+.animated-icon-container--ticket {
+    transform: scale(1.15) translateY(5%)
+}
+
 .competencies-nav__item:hover .animated-icon-container--ticket img:nth-child(3) {
     animation-name: ticket-slide;
     animation-duration: 2s;
@@ -3232,6 +3237,7 @@ body.full-main .competencies:not(:last-child) {
 .competencies-nav {
     position: relative;
     margin: 39px 0 0;
+    margin-top: 0px;
     padding: 0 0 37px;
 }
 
