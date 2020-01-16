@@ -3237,7 +3237,7 @@ body.full-main .competencies:not(:last-child) {
 .competencies-nav {
     position: relative;
     margin: 39px 0 0;
-    margin-top: 0px;
+    margin-top: -30px;
     padding: 0 0 37px;
 }
 
