@@ -1072,21 +1072,26 @@ $(function() {
         const computedStyle = getComputedStyle(element);
         const computedHeight = computedStyle.height;
 
-        const offsetHeight = element.offsetHeight;
+       
         element.style.maxHeight = '';
         element.style.overflow = '';
 
-        console.log('Offset height', offsetHeight);
+        
 
         setTimeout(() => {
             const transitionEndHandler = () => {
                 console.log('Tranisitionnd Initiated');
-                element.style.maxHeight = 'none';
+                element.style.maxHeight = 'auto';
                 element.removeEventListener('transitionend', transitionEndHandler);
             };
             element.addEventListener('transitionend', transitionEndHandler);
             element.style.maxHeight = `${computedHeight}`;
         }, 20);
+    }
+
+    function closeAccordeon(element) {
+        element.style.maxHeight = '';
+        element.style.overflow = '';
     }
 
     showAllBtns.forEach(btn => {
@@ -1110,7 +1115,7 @@ $(function() {
         console.log(controls);
         controls[0].classList.add('active');
         tabItems[0].classList.add('active');
-        
+
         controls.forEach((btn, index) => {
             btn.addEventListener('click', function(event) {
                 event.preventDefault();
@@ -1119,7 +1124,31 @@ $(function() {
 
                 controls[index].classList.add('active');
                 tabItems[index].classList.add('active');
-            })
-        })
+            });
+        });
+    });
+
+    // Accordions
+
+    const accordionBtns = Array.from(document.querySelectorAll('.accordions__open-btn'));
+
+    accordionBtns.forEach(element => {
+        element.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            const content = element.nextElementSibling;
+
+            console.log(content);
+
+            if (!content) return;
+
+            if (element.classList.contains('active')) {
+                closeAccordeon(content);
+            } else {
+                openAccordeon(content);
+            }
+
+            element.classList.toggle('active');
+        });
     });
 });

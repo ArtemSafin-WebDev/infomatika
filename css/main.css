@@ -1,3 +1,146 @@
+.accordions__heading {
+    margin-bottom: 30px;
+}
+
+.accordions__large-text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.33;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.accordions__small-text {
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'PF Agora Sans Pro';
+    margin-bottom: 30px;
+    color: black;
+}
+
+.accordions__list {
+    list-style: none;
+    border: 9px solid #edf3f9;
+}
+
+.accordions__list-item {
+    border-bottom: 9px solid #edf3f9;
+}
+
+.accordions__list-item:last-child {
+    border-bottom: none;
+}
+
+.accordions__open-btn {
+    display: flex;
+    align-items: flex-start;
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 300;
+    padding: 35px 40px;
+    justify-content: space-between;
+    border: none;
+}
+
+.accordions__cross {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    position: relative;
+    margin-top: 0px;
+}
+
+.accordions__cross::before,
+.accordions__cross::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 5px;
+    background-color: #5d93cf;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+
+.accordions__cross::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.accordions__open-btn.active .accordions__cross::after {
+    transform: translate(-50%, -50%) rotate(90deg) scaleX(0);
+}
+
+.accordions__open-btn:link,
+.accordions__open-btn:visited {
+    color: black;
+}
+
+.accordions__card-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s;
+    font-family: 'PF Agora Sans Pro';
+}
+
+.accordions__card-content p {
+    margin: 30px 0;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.accordions__card-content p:first-child {
+    margin-top: 0;
+}
+.accordions__card-content p:last-child {
+    margin-bottom: 0;
+}
+
+.accordions__card-content ul:first-child {
+    margin-top: 0;
+}
+.accordions__card-content ul:last-child {
+    margin-bottom: 0;
+}
+
+.accordions__card-content ul {
+    margin: 0;
+    padding: 0;
+    margin: 30px 0;
+    font-size: 20px;
+    line-height: 26px;
+    list-style: none;
+}
+
+.accordions__card-content ul li {
+    margin: 0;
+    padding: 0;
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.accordions__card-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+.accordions__card-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #82b452;
+}
+
+.accordions__card-content-inner-wrapper {
+    padding: 35px;
+    padding-top: 0;
+}
+
 .tabs-with-icons__heading {
     margin-bottom: 30px;
 }
@@ -13,7 +156,7 @@
 .tabs-with-icons__small-text {
     font-size: 20px;
     line-height: 26px;
-    font-family: 'PF Agora Sans Pro';
+
     margin-bottom: 30px;
     color: black;
 }
@@ -613,7 +756,6 @@
         padding: 25px 20px;
     }
 
-
     .tabs-with-icons__tabs-navigation {
         flex-wrap: nowrap;
         overflow-y: hidden;
@@ -639,7 +781,6 @@
         height: 1px;
     }
 
-
     .tabs-with-icons__tabs-navigation-btn {
         font-size: 16px;
         line-height: 1.33;
@@ -649,7 +790,6 @@
         width: 35px;
         height: 35px;
     }
-
 
     .tabs-with-icons__items {
         margin-top: 35px;
@@ -683,10 +823,66 @@
         margin-bottom: 15px;
     }
 
+
+    .accordions__card-content ul {
+        margin: 20px 0;
+    }
+
     .specs__small-text {
         font-size: 16px;
         line-height: 1.33;
         margin-bottom: 30px;
+    }
+
+    .accordions__open-btn {
+        font-size: 16px;
+        line-height: 1.33;
+        padding: 20px;
+    }
+
+  
+
+    .accordions__card-content p { 
+        font-size: 16px;
+        line-height: 1.33;
+        margin: 20px 0;
+    }
+    .accordions__card-content ul {
+        margin: 20px 0;
+        font-size: 16px;
+        line-height: 1.33;
+    }
+
+
+    .accordions__card-content ul li::before {
+        top: 7px;
+    }
+
+    .accordions__card-content-inner-wrapper {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .accordions__large-text {
+        font-size: 18px;
+        line-height: 1.33;
+        margin-bottom: 15px;
+    }
+
+    .accordions__small-text {
+        font-size: 16px;
+        line-height: 1.33;
+        margin-bottom: 30px;
+    }
+
+    .accordions__cross {
+        width: 25px;
+        height: 25px;
+    }
+
+    .accordions__cross::before,
+    .accordions__cross::after {
+        height: 3px;
     }
 
     .tabs-with-icons__large-text {
@@ -700,13 +896,9 @@
         margin-bottom: 30px;
     }
 
-
     .tabs-with-icons__tabs {
         margin-top: 30px;
     }
-
-
-    
 
     .tabs-with-icons__list-item {
         font-size: 16px;
@@ -729,6 +921,15 @@
     }
 
     .specs__documents-list-item {
+        border-width: 6px;
+    }
+
+
+    .accordions__list {
+        border-width: 6px;
+    }
+    
+    .accordions__list-item {
         border-width: 6px;
     }
 
