@@ -1103,13 +1103,23 @@ $(function() {
     }
 
     showAllBtns.forEach(btn => {
+        const btnInitialText = btn.textContent;
+        const btnNewText = 'Свернуть';
         btn.addEventListener('click', function(event) {
             event.preventDefault();
             const container = btn.closest('.type-project__info');
             if (!container) return;
             const content = container.querySelector('.show-all-hidden-content');
-            openAccordeon(content);
-            btn.classList.add('hidden');
+
+            if (btn.classList.contains('active')) {
+                closeAccordeon(content);
+                btn.textContent = btnInitialText;
+            } else {
+                openAccordeon(content);
+                btn.textContent = btnNewText;
+            }
+            
+            btn.classList.toggle('active');
         });
     });
 
