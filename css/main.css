@@ -664,6 +664,11 @@
     object-fit: contain;
 }
 
+
+.competencies-nav__item .desc-item {
+    margin-top: -20px;
+}
+
 .production-competencies__heading {
     margin-bottom: 30px;
 }
