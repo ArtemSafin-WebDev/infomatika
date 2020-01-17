@@ -2,6 +2,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 0 !important;
 }
 
 .hello-slider__top-nav {
