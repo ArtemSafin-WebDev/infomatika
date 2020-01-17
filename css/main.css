@@ -759,6 +759,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: -20px -35px;
+    padding: 0;
 }
 
 .advantages-2__list-item {
