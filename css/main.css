@@ -1,4 +1,8 @@
-
+.info-img.landing-block-info-image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .hello-slider__top-nav {
     position: absolute;
