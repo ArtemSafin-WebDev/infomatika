@@ -2533,14 +2533,18 @@
         font-size: 18px;
     }
 
-    .tasks-project__item {
+    /* .tasks-project__item {
         display: block;
-    }
+    } */
 
     .tasks-project__item .icon-item {
-        position: absolute;
-        right: 30px;
-        top: 22px;
+        position: static;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        margin-left: 15px;
+        flex-shrink: 0;
+        order: 2;
     }
 
     .chief__typical.h2:not(:last-child) {
@@ -4583,6 +4587,7 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        justify-content: space-between;
     }
 
     .tasks-project__item .title-item {
