@@ -3011,7 +3011,10 @@
 
     .projects-category__item .category-item .title-category {
         font-size: 18px;
-        margin-bottom: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-family: 'PF Agora Sans Pro';
     }
 
     .projects-category__item .list-item li a {
@@ -3688,6 +3691,7 @@
     .projects-category__item .category-item .title-category {
         font-size: 16px;
         margin-bottom: 8px;
+        font-weight: 700;
     }
 
     .projects-category__item .title-item .icon-title {
