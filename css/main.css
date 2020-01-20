@@ -705,7 +705,7 @@
 
 
 .animated-icon-container--ticket {
-    transform: scale(1.15) translateY(5%)
+    transform: scale(1.1) translateY(5%)
 }
 
 .competencies-nav__item:hover .animated-icon-container--ticket img:nth-child(3) {
