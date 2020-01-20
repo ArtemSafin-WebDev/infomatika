@@ -922,8 +922,6 @@ $(function() {
             }
             parentElement.classList.toggle('accordion-btn-active');
         });
-
-       
     });
 
     // project details
@@ -1118,7 +1116,7 @@ $(function() {
                 openAccordeon(content);
                 btn.textContent = btnNewText;
             }
-            
+
             btn.classList.toggle('active');
         });
     });
@@ -1133,7 +1131,7 @@ $(function() {
         console.log(controls);
         controls[0].classList.add('active');
         tabItems[0].classList.add('active');
-        
+
         controls.forEach((btn, index) => {
             btn.addEventListener('click', function(event) {
                 event.preventDefault();
@@ -1167,6 +1165,43 @@ $(function() {
             }
 
             element.classList.toggle('active');
+        });
+    });
+
+    // Experience slider
+
+    const experienceSliders = Array.from(document.querySelectorAll('.js-experience-slider'));
+
+    experienceSliders.forEach(slider => {
+        const container = slider.querySelector('.swiper-container');
+
+        new Swiper(container, {
+            watchOverflow: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                prevEl: slider.querySelector('.projects-main-slider__btn--prev'),
+                nextEl: slider.querySelector('.projects-main-slider__btn--next')
+            },
+            breakpoints: {
+                512: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                1600: {
+                    slidesPerView: 5,
+                    spaceBetween: 50
+                }
+            }
         });
     });
 });
