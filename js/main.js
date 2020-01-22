@@ -900,6 +900,12 @@ $(function() {
 
         let hiddenAccordions = [];
 
+
+        if (children.length <= 10) {
+            parentElement.style.display = "none";
+            return;
+        }
+
         children.forEach((child, index) => {
             if (index > btnIndex) {
                 child.classList.add('accordion-hidden');
