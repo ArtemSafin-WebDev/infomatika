@@ -1170,38 +1170,40 @@ $(function() {
 
     // Experience slider
 
-    const experienceSliders = Array.from(document.querySelectorAll('.js-experience-slider'));
+    if (!document.body.classList.contains('is-admin')) {
+        const experienceSliders = Array.from(document.querySelectorAll('.js-experience-slider'));
 
-    experienceSliders.forEach(slider => {
-        const container = slider.querySelector('.swiper-container');
+        experienceSliders.forEach(slider => {
+            const container = slider.querySelector('.swiper-container');
 
-        new Swiper(container, {
-            watchOverflow: true,
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            navigation: {
-                prevEl: slider.querySelector('.projects-main-slider__btn--prev'),
-                nextEl: slider.querySelector('.projects-main-slider__btn--next')
-            },
-            breakpoints: {
-                512: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
+            new Swiper(container, {
+                watchOverflow: true,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                navigation: {
+                    prevEl: slider.querySelector('.projects-main-slider__btn--prev'),
+                    nextEl: slider.querySelector('.projects-main-slider__btn--next')
                 },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                },
-                1600: {
-                    slidesPerView: 5,
-                    spaceBetween: 50
+                breakpoints: {
+                    512: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40
+                    },
+                    1600: {
+                        slidesPerView: 5,
+                        spaceBetween: 50
+                    }
                 }
-            }
+            });
         });
-    });
+    }
 });
