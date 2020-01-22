@@ -31,43 +31,7 @@
     }
 }
 
-@media only screen and (min-width: 1920px) {
-    body.full-main .search-input {
-        width: calc(1920px - 322px - 201px);
-    }
-}
 
-@media only screen and (max-width: 1919px) and (min-width: 1421px) {
-    body.full-main .search-input {
-        width: calc(100vw - 322px - 201px);
-    }
-}
-
-@media only screen and (max-width: 1420px) and (min-width: 1280px) {
-    body.full-main .search-input {
-        width: calc(100vw - 322px - 141px);
-    }
-}
-
-@media only screen and (max-width: 1279px) and (min-width: 1200px) {
-    body.full-main .search-input {
-        width: calc(100vw - 322px - 121px);
-    }
-
-    body:not(.full-main) .search-input {
-        width: calc(100vw - 322px - 121px);
-    }
-}
-
-@media only screen and (max-width: 1199px) and (min-width: 1024px) {
-    body.full-main .search-input {
-        width: calc(100vw - 322px - 68px);
-    }
-
-    body:not(.full-main) .search-input {
-        width: calc(100vw - 322px - 68px);
-    }
-}
 
 @media only screen and (min-width: 1600px) {
     .project-gallery-slider .slick-prev {
@@ -188,9 +152,7 @@
         margin-right: -500px;
     }
 
-    body:not(.full-main) .search-input {
-        width: calc(1421px - 322px - 141px);
-    }
+    
 
     .project-gallery__items {
         margin-right: calc((-100vw + 1361px) / 2);
@@ -420,9 +382,7 @@
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1420px) {
-    body:not(.full-main) .search-input {
-        width: calc(100vw - 322px - 141px);
-    }
+   
 
     body.full-main .wrapper {
         padding-left: 30px;
