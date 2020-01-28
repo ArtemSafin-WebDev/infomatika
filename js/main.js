@@ -900,9 +900,8 @@ $(function() {
 
         let hiddenAccordions = [];
 
-
         if (children.length <= 10) {
-            parentElement.style.display = "none";
+            parentElement.style.display = 'none';
             return;
         }
 
@@ -1209,6 +1208,20 @@ $(function() {
                         spaceBetween: 50
                     }
                 }
+            });
+        });
+    }
+
+    // Scroll to slider
+
+    const competNav = Array.from(document.querySelectorAll('.competencies-nav__column'));
+    const competFor = document.querySelector('.competencies-for');
+    if (competFor) {
+        competNav.forEach(nav => {
+            nav.addEventListener('click', function(event) {
+                competFor.scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
     }
