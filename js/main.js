@@ -1215,7 +1215,7 @@ $(function() {
     // Scroll to slider
 
     const competNav = Array.from(document.querySelectorAll('.competencies-nav__column'));
-    const competFor = document.querySelector('.competencies-for');
+    const competFor = document.querySelector('.competencies-nav-wrapper');
     if (competFor) {
         competNav.forEach(nav => {
             nav.addEventListener('click', function(event) {
