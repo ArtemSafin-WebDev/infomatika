@@ -1,3 +1,28 @@
+
+
+
+.info-item {
+    align-self: flex-start;
+}
+
+
+.info-item .headline__typical {
+    min-height: 102px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .info-item .headline__typical {
+        min-height: auto;
+    }
+
+
+    .more-projects__column {
+        margin-bottom: 20px;
+    }
+}
+
+
 .experience__slider-block {
     position: relative;
 }
@@ -426,7 +451,11 @@
     padding: 35px 40px;
     justify-content: space-between;
     border: none;
+    transition: color .2s;
 }
+
+
+
 
 .accordions__cross {
     width: 30px;
@@ -461,6 +490,11 @@
 .accordions__open-btn:link,
 .accordions__open-btn:visited {
     color: black;
+}
+
+
+.accordions__open-btn:hover {
+    color: rgb(0, 86, 162);
 }
 
 .accordions__card-content {
@@ -2610,12 +2644,8 @@ a.tasks-project__item:hover .icon-item .path {
 
 .more-projects__item {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    flex-direction: column;
     border-bottom-width: 0;
     border-radius: 13px;
 }
@@ -2646,6 +2676,7 @@ a.tasks-project__item:hover .icon-item .path {
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
+    flex-grow: 1;
 }
 
 .more-projects__item .info-item {
@@ -5787,6 +5818,7 @@ body.full-main .competencies:not(:last-child) {
     border-radius: 10px;
     overflow: hidden;
     margin-top: 30px;
+    
 }
 
 .project-gallery-slider .slick-prev,

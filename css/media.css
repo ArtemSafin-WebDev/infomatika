@@ -544,6 +544,7 @@
     .search-input {
         font-size: 15px;
         padding: 16px 46px 16px 18px;
+        padding-bottom: 13px;
     }
 
     .modal-certificates__img {
@@ -861,6 +862,7 @@
     }
 
     .search-input {
+        width: 40vw;
         position: absolute;
         top: -16px;
         z-index: 1;
@@ -2703,7 +2705,7 @@
 
     .more-projects__item {
         height: calc(100% - 30px);
-        margin-top: 30px;
+      
     }
 
     h1, .h1 {
