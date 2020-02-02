@@ -1225,4 +1225,32 @@ $(function() {
             });
         });
     }
+
+    // Project gallery slider
+
+    const projectGallerySlider = Array.from(document.querySelectorAll('.js-project-gallery-slider'));
+
+    projectGallerySlider.forEach(slider => {
+        const container = slider.querySelector('.swiper-container');
+
+        new Swiper(container, {
+            watchOverflow: true,
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            navigation: {
+                nextEl: slider.querySelector('.project-gallery__slider-arrow--prev'),
+                prevEl: slider.querySelector('.project-gallery__slider-arrow--next')
+            },
+            breakpoints: {
+                601: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                }
+            }
+        });
+    });
 });
