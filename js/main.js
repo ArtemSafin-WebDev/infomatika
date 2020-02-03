@@ -1253,4 +1253,40 @@ $(function() {
             }
         });
     });
+
+    
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Terminal slider
+
+    const terminalSliders = Array.from(document.querySelectorAll('.js-terminal-slider'));
+
+    terminalSliders.forEach(slider => {
+        const container = slider.querySelector('.swiper-container');
+
+        new Swiper(container, {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            watchOverflow: true,
+            navigation: {
+                nextEl: slider.querySelector('.project-gallery__slider-arrow--prev'),
+                prevEl: slider.querySelector('.project-gallery__slider-arrow--next')
+            },
+            breakpoints: {
+                601: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 5
+                },
+                1024: {
+                    slidesPerView: 7
+                }
+            }
+        })
+    })
+})
