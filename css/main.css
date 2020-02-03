@@ -224,6 +224,7 @@
     min-height: 94px;
     margin-top: 0;
     margin-bottom: 20px;
+    padding-right: 18px;
 }
 
 .stages__card-text-content {
@@ -231,6 +232,7 @@
     font-size: 18px;
     line-height: 22px;
     color: #6d6d6d;
+    padding-right: 18px;
 }
 
 .stages__top {
