@@ -94,20 +94,30 @@
     width: 100%;
     height: auto;
     display: block;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+    .terminal__image {
+        max-height: 400px;
+    }
 }
 
 @media screen and (max-width: 768px) {
    
-
     .terminal__left-column,
     .terminal__right-column {
         width: 100%;
     }
 
-
     .terminal__text-content {
         font-size: 18px;
         line-height: 1.4;
+    }
+
+    .terminal__image {
+        max-height: 300px;
     }
 }
 
@@ -313,6 +323,11 @@
     .stages__list-item {
         padding: 20px 8px;
     }
+
+    .stages__card-title { 
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
 }
 
 .stages__text-content {
@@ -320,6 +335,21 @@
     font-size: 24px;
     line-height: 1.4;
     margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .stages__text-content {
+        font-size: 18px;
+        line-height: 1.33;
+        margin-bottom: 20px;
+    }
+
+
+    .stages__heading {
+        margin-bottom: 50px;
+    }
+        
 }
 
 .stages__remark {
@@ -1367,12 +1397,17 @@
 
     100% {
         opacity: 0;
-        transform: translate(0, 0);
+        transform: translate(0%, 0%);
     }
 }
 
 .animated-icon-container--ticket {
     transform: scale(1.1) translateY(5%);
+}
+
+
+.competencies-nav__item .animated-icon-container--ticket img:nth-child(3) {
+    transform: translate(8%, -12%);
 }
 
 .competencies-nav__item:hover .animated-icon-container--ticket img:nth-child(3) {

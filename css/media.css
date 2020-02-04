@@ -4608,11 +4608,13 @@
     }
 
     h2, .h2 {
-        font-size: 26px;
+        font-size: 28px;
+        hyphens: auto;
     }
 
     h4, .h4 {
         font-size: 18px;
+        hyphens: auto;
     }
 
     .project-nav:not(.static) {
