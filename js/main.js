@@ -1238,8 +1238,8 @@ $(function() {
             slidesPerView: 'auto',
             spaceBetween: 10,
             navigation: {
-                nextEl: slider.querySelector('.project-gallery__slider-arrow--prev'),
-                prevEl: slider.querySelector('.project-gallery__slider-arrow--next')
+                nextEl: slider.querySelector('.project-gallery__slider-arrow--next'),
+                prevEl: slider.querySelector('.project-gallery__slider-arrow--prev')
             },
             breakpoints: {
                 601: {
@@ -1273,8 +1273,8 @@ document.addEventListener('DOMContentLoaded', function() {
             spaceBetween: 20,
             watchOverflow: true,
             navigation: {
-                nextEl: slider.querySelector('.project-gallery__slider-arrow--prev'),
-                prevEl: slider.querySelector('.project-gallery__slider-arrow--next')
+                nextEl: slider.querySelector('.project-gallery__slider-arrow--next'),
+                prevEl: slider.querySelector('.project-gallery__slider-arrow--prev')
             },
             breakpoints: {
                 601: {
