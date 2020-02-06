@@ -1,3 +1,40 @@
+
+.options-project__nav li .icon-tab svg {
+    transition: fill .2s;
+}
+
+.options-project__nav li:not(.active) .icon-tab svg {
+    fill: #848A91;
+}
+.options-project__nav li.active .icon-tab svg {
+    fill: #82B452;
+}
+
+.options-project__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+
+}
+
+.options-project__nav li {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.options-project__nav li:not(.active) a {
+    flex-grow: 1;
+}
+
+.options-project__nav li:not(.active) a:hover {
+    background-color: #F3F7FA;
+}
+.options-project__nav li:not(.active) a:hover svg {
+    fill: #165DA1;
+}
+
 .terminal__slider-wrapper {
     position: relative;
     padding: 35px 0;
@@ -2828,9 +2865,9 @@ a.tasks-project__item:hover .icon-item .path {
     line-height: 1;
 }
 
-.options-project__nav li:not(.active) .icon-tab {
+/* .options-project__nav li:not(.active) .icon-tab {
     opacity: 0.4;
-}
+} */
 
 .projects-slide {
     position: relative;
