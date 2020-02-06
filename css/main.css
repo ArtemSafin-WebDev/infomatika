@@ -5,6 +5,11 @@
     flex-direction: column;
 }
 
+
+.more-projects {
+    padding-top: 0 !important;
+}
+
 .more-projects__item .info-item {
     margin-top: auto;
 }
