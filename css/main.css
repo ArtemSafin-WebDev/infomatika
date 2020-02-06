@@ -1,3 +1,9 @@
+
+.certificates__item .item-img {
+    align-items: stretch !important;
+}
+
+
 .projects-categories__card {
     display: flex;
     flex-direction: column;
