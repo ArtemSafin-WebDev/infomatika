@@ -1,8 +1,26 @@
 
+.more-projects__item .info-item {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.more-projects__item .info-item {
+    margin-top: auto;
+}
+
+.more-projects__column.column-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.more-projects__item {
+    flex-grow: 1;
+}
+
 .certificates__item .item-img {
     align-items: stretch !important;
 }
-
 
 .projects-categories__card {
     display: flex;

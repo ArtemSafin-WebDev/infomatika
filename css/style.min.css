@@ -7441,10 +7441,21 @@ p {
     cursor: pointer;
 }
 
-.headline__phone .phone {
+.headline__phone .phone,
+.headline__phone .lang {
     font-family: "PF Agora Serif Pro";
     color: #000000;
     border-bottom-width: 0;
+}
+
+.headline__phone .lang {
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1023px) {
+    .headline__phone .lang {
+        display: none;
+    }
 }
 
 .headline__phone .email {

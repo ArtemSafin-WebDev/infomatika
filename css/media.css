@@ -1436,7 +1436,8 @@
         padding-right: 40px;
     }
 
-    .headline__phone .phone {
+    .headline__phone .phone,
+    .headline__phone .lang {
         font-size: 18px;
     }
 
