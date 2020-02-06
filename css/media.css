@@ -2703,10 +2703,10 @@
         margin-top: -30px;
     }
 
-    .more-projects__item {
+    /* .more-projects__item {
         height: calc(100% - 30px);
       
-    }
+    } */
 
     h1, .h1 {
         letter-spacing: 16px;
@@ -4259,8 +4259,8 @@
     }
 
     .more-projects__item {
-        min-height: 146px;
-        height: calc(100% - 16px);
+        min-height: 200px;
+        
         margin-top: 16px;
     }
 
