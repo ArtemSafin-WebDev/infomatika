@@ -1,10 +1,20 @@
 
+/* Фиксы сайтов 24 */
+
+.container {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.g-color-primary {
+    color: #FFC003 !important;
+}
+
 .more-projects__item .info-item {
     align-self: stretch;
     display: flex;
     flex-direction: column;
 }
-
 
 .more-projects {
     padding-top: 0 !important;

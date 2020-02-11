@@ -1250,7 +1250,7 @@ td, th {
 }
 
 html {
-    font-size: 1px;
+    
     -webkit-tap-highlight-color: transparent
 }
 
@@ -1278,13 +1278,13 @@ a {
     color: #FFC003;
     text-decoration: none;
     transition: 0.25s ease-in-out;
-    border-bottom: 1px solid currentColor;
+    
 }
 
 a:focus, a:hover {
     color: #1d62a6;
     text-decoration: none;
-    border-bottom-color: transparent;
+   
     outline: none;
 }
 
