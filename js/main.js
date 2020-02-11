@@ -427,6 +427,7 @@ $(function() {
         if ($('*').is('.main-hello-slider')) {
             $('.main-hello-slider').slick({
                 slidesToShow: 5,
+                autoplay: true,
                 slidesToScroll: 1,
                 infinite: false,
                 speed: 750,
