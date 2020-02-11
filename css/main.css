@@ -6,9 +6,20 @@
     max-width: none !important;
 }
 
-.g-color-primary {
+.g-color-primary,
+.u-btn-primary {
     color: #FFC003 !important;
 }
+
+.u-btn-primary:hover, .u-btn-primary.active {
+    color: #1d62a6 !important;
+}
+
+
+/* .g-font-cormorant-infant,
+.g-font-roboto-slab {
+    font: inherit !important;
+} */
 
 .more-projects__item .info-item {
     align-self: stretch;
