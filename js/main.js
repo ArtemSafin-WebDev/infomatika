@@ -323,6 +323,7 @@ $(function() {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
+                autoplay: true,
                 speed: 750,
                 arrows: true,
                 dots: false,
@@ -1185,6 +1186,7 @@ $(function() {
                 watchOverflow: true,
                 slidesPerView: 1,
                 spaceBetween: 10,
+                autoplay: true,
                 loop: true,
                 navigation: {
                     prevEl: slider.querySelector('.projects-main-slider__btn--prev'),

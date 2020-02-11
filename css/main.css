@@ -6304,7 +6304,7 @@ body.full-main .competencies:not(:last-child) {
     border-bottom: 1px solid #c2cfdc;
 }
 
-.project-article p:not(.big):not(.insert) {
+/* .project-article p:not(.big):not(.insert) {
     position: relative;
     z-index: 1;
     max-width: 1000px;
@@ -6314,7 +6314,7 @@ body.full-main .competencies:not(:last-child) {
 
 .project-article p:not(.big):not(.insert):not(:last-child) {
     margin-bottom: 15px;
-}
+} */
 
 .project-article ul:not(.static) {
     max-width: 1000px;
