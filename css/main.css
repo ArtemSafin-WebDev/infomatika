@@ -11,7 +11,77 @@
     color: #FFC003 !important;
 }
 
+.g-brd-primary {
+    border-color: #FFC003 !important;
+}
+
+.g-bg-primary,
+.u-btn-primary {
+    background-color: #FFC003 !important;
+}
+
+.g-bg-primary--hover:hover {
+    background-color: #FFC003 !important;
+}
+
+
+.g-parent:hover .g-color-primary--parent-hover {
+    color: #FFC003 !important;
+}
+
 .u-btn-primary:hover, .u-btn-primary.active {
+    background-color: #FFC003 !important;
+    border-color: #FFC003 !important;
+}
+
+.g-bg-primary-opacity-0_1 {
+    background-color: rgba(255, 192, 3, .1) !important;
+}
+
+.g-bg-primary-opacity-0_2 {
+    background-color: rgba(255, 192, 3, .2) !important;
+}
+.g-bg-primary-opacity-0_3 {
+    background-color: rgba(255, 192, 3, .3) !important;
+}
+.g-bg-primary-opacity-0_4 {
+    background-color: rgba(255, 192, 3, .4) !important;
+}
+.g-bg-primary-opacity-0_5 {
+    background-color: rgba(255, 192, 3, .5) !important;
+}
+.g-bg-primary-opacity-0_6 {
+    background-color: rgba(255, 192, 3, .6) !important;
+}
+.g-bg-primary-opacity-0_7 {
+    background-color: rgba(255, 192, 3, .7) !important;
+}
+.g-bg-primary-opacity-0_8 {
+    background-color: rgba(255, 192, 3, .8) !important;
+}
+.g-bg-primary-opacity-0_9 {
+    background-color: rgba(255, 192, 3, .9) !important;
+}
+
+
+.g-color-primary *, .g-color-primary p {
+    color: #FFC003 !important;
+}
+
+.u-btn-primary:hover, .u-btn-primary.active {
+    color: #1d62a6 !important;
+}
+
+
+.btn {
+    color: white !important;
+}
+
+.u-btn-white {
+    color: #FFC003 !important;
+}
+
+.u-btn-white:hover, .u-btn-white.active {
     color: #1d62a6 !important;
 }
 
