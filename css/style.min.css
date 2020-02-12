@@ -9629,17 +9629,20 @@ progress, sub, sup {
     width: 100%
 }
 
-.wrapper {
-    margin-left: auto;
-    margin-right: auto;
+.wrapper,
+.container {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
-body:not(.full-main) .wrapper {
-    max-width: 1421px;
+body:not(.full-main) .wrapper,
+body:not(.full-main) .container {
+    max-width: 1421px !important;
 }
 
-body.full-main .wrapper {
-    max-width: none;
+body.full-main .wrapper,
+body.full-main .container {
+    max-width: none !important;
 }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */

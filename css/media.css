@@ -384,7 +384,8 @@
 @media only screen and (min-width: 1280px) and (max-width: 1420px) {
    
 
-    body.full-main .wrapper {
+    body.full-main .wrapper,
+    body.full-main .container {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -415,7 +416,8 @@
 }
 
 @media only screen and (min-width: 1421px) {
-    body.full-main .wrapper {
+    body.full-main .wrapper,
+    body.full-main .container {
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -465,7 +467,8 @@
         padding: 63px 60px;
     }
 
-    body:not(.full-main) .wrapper {
+    body:not(.full-main) .wrapper,
+    body:not(.full-main) .container {
         padding-left: 30px;
         padding-right: 30px;
     }
