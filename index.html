@@ -100,7 +100,7 @@
                                             <div class="headline__phone t-header">
                                                 <a href="tel:88002504406" class="phone">8 800 250-44-06</a>
                                                 <a href="mailto:office@infomatika.ru" class="email">office@infomatika.ru</a>
-                                                 <a href="#" class="lang">En</a>
+                                                <a href="#" class="lang">En</a>
                                             </div>
                                         </div>
                                     </div>
@@ -527,7 +527,12 @@
                     <div class="competencies-for">
                         <div class="competencies-for-slider flex">
                             <div class="competencies-for-slide">
-                                <div class="competencies-for-bg" style="background-image: url('img/competencies/bg.jpg')"></div>
+                                <div class="competencies-for-bg">
+                                    <picture>
+                                        <source srcset="img/competencies/bg.jpg" media="(max-width: 600px)">
+                                        <img src="img/competencies/bg.jpg" alt="MDN">
+                                    </picture>
+                                </div>
                                 <div class="wrapper">
                                     <div class="competencies-for__info">
                                         <div class="headline__typical chief__typical h3">
@@ -1252,7 +1257,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <script src="js/libs/jquery.min.js"></script>
