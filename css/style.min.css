@@ -9630,18 +9630,22 @@ progress, sub, sup {
 }
 
 .wrapper,
-.container {
+.container,
+.container-fluid {
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
 body:not(.full-main) .wrapper,
-body:not(.full-main) .container {
+body:not(.full-main) .container, 
+body:not(.full-main) .container-fluid {
     max-width: 1421px !important;
+    width: 100% !important;
 }
 
 body.full-main .wrapper,
-body.full-main .container {
+body.full-main .container,
+body.full-main .container-fluid {
     max-width: none !important;
 }
 
