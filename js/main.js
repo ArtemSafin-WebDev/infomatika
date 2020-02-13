@@ -993,6 +993,7 @@ $(function() {
 
         var mainSliderOptions = {
             watchOverflow: true,
+            autoplay: true,
             navigation: {
                 prevEl: slider.querySelector('.projects-main-slider__btn--prev'),
                 nextEl: slider.querySelector('.projects-main-slider__btn--next')
