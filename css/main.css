@@ -720,7 +720,7 @@
     position: relative;
     display: block;
     border: none;
-    background-color: red;
+    background-color: white;
     grid-row: span 1;
     grid-column: span 1;
 }
@@ -6399,7 +6399,8 @@ body.full-main .competencies:not(:last-child) {
 }
 
 .project-article p.big.border {
-    border-bottom: 1px solid #c2cfdc;
+    border: none !important;
+    border-bottom: 1px solid #c2cfdc !important;
 }
 
 /* .project-article p:not(.big):not(.insert) {
