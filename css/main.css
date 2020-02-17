@@ -2743,7 +2743,7 @@ a.tasks-project__item:hover .icon-item .path {
 
 
 @media screen and (max-width: 600px) {
-    .tasks-project__item .plus-item {
+    .tasks-project__item[data-toggle="modal"] .plus-item {
         opacity: 1 !important;
     }
 }
