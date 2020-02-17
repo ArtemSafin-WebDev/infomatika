@@ -1,3 +1,5 @@
+console.log('Новый файл');
+
 function viewport() {
     var e = window,
         a = 'inner';
@@ -894,19 +896,29 @@ $(function() {
     const taskProjectMoreBtns = Array.from(document.querySelectorAll('.tasks-project__more'));
 
     taskProjectMoreBtns.forEach(btn => {
-        const parentElement = btn.parentElement;
-        const container = parentElement.parentElement;
-        const children = Array.from(container.children);
-        const btnIndex = children.indexOf(parentElement);
+        const buttonItem = btn.parentElement;
+        const container = buttonItem.parentElement;
+        let children = Array.from(container.children);
+        let btnIndex = children.indexOf(buttonItem);
         const btnTextContainer = btn.querySelector('.desc-more span');
         const btnInitialText = btn.getAttribute('data-before-action') || btnTextContainer.textContent;
         const btnNewText = btn.getAttribute('data-after-action') || 'Свернуть обратно';
+        const itemsCount = children.length - 1;
 
         let hiddenAccordions = [];
 
-        if (children.length <= 10) {
-            parentElement.style.display = 'none';
+        if (itemsCount <= 9 && !window.matchMedia('(max-width: 600px)').matches) {
+            buttonItem.style.display = 'none';
             return;
+        } else if (itemsCount > 3 && window.matchMedia('(max-width: 600px)').matches) {
+            children.forEach((child, index) => {
+                if (index > 2 && index !== btnIndex) {
+                    buttonItem.insertAdjacentElement('afterend', child);
+                }
+            });
+
+            children = Array.from(container.children);
+            btnIndex = children.indexOf(buttonItem);
         }
 
         children.forEach((child, index) => {
@@ -918,7 +930,7 @@ $(function() {
 
         btn.addEventListener('click', function(event) {
             event.preventDefault();
-            if (parentElement.classList.contains('accordion-btn-active')) {
+            if (buttonItem.classList.contains('accordion-btn-active')) {
                 hiddenAccordions.forEach(accordion => {
                     closeAccordeon(accordion);
                 });
@@ -929,7 +941,7 @@ $(function() {
                 });
                 btnTextContainer.textContent = btnNewText;
             }
-            parentElement.classList.toggle('accordion-btn-active');
+            buttonItem.classList.toggle('accordion-btn-active');
         });
     });
 
@@ -1259,12 +1271,7 @@ $(function() {
             }
         });
     });
-
-    
 });
-
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     // Terminal slider
@@ -1284,7 +1291,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             breakpoints: {
                 601: {
-                    slidesPerView: 4,
+                    slidesPerView: 4
                 },
                 768: {
                     slidesPerView: 5
@@ -1293,6 +1300,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     slidesPerView: 7
                 }
             }
-        })
-    })
-})
+        });
+    });
+});
