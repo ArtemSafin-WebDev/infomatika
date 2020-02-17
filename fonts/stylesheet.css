@@ -5,6 +5,7 @@
     url('../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.svg#PFAgoraSansPro-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -43,6 +44,15 @@
     url('../fonts/PFBeauSansPro-XThin/PFBeauSansPro-XThin.woff') format('woff'),
     url('../fonts/PFBeauSansPro-XThin/PFBeauSansPro-XThin.svg#PFBeauSansPro-XThin') format('svg');
     font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PF BeauSans Pro';
+    src: url('../fonts/PFBeauSansPro-Bold/PFBeauSansPro-Bold.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-Bold/PFBeauSansPro-Bold.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }

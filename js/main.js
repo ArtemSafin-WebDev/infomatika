@@ -365,6 +365,7 @@ $(function() {
                 arrows: true,
                 dots: false,
                 fade: false,
+                adaptiveHeight: true,
                 prevArrow: '<button class="slick-prev slick-arrow competencies-for-slider__prev" aria-label="Prev" type="button" style="">Prev</button>',
                 nextArrow: '<button class="slick-next slick-arrow competencies-for-slider__next" aria-label="Next" type="button" style="">Next</button>',
                 responsive: [
@@ -559,7 +560,8 @@ $(function() {
                     arrows: false,
                     dots: false,
                     fade: false,
-                    variableWidth: true
+                    variableWidth: true,
+                    adaptiveHeight: true
                 });
             }
 
