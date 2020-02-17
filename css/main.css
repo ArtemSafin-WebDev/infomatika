@@ -721,7 +721,7 @@
     position: relative;
     display: block;
     border: none;
-    background-color: red;
+    background-color: white;
     grid-row: span 1;
     grid-column: span 1;
 }
@@ -6146,7 +6146,7 @@ body.full-main .competencies:not(:last-child) {
 
 .projects-category__item.type-1 .btn {
     color: #165da1;
-    background-color: #edf3f9;
+    background-color: #edf3f9 ;
 }
 
 .projects-category__item.type-1 .btn:hover {
@@ -6409,7 +6409,13 @@ body.full-main .competencies:not(:last-child) {
 }
 
 .project-article p.big.border {
-    border-bottom: 1px solid #c2cfdc;
+    border: none !important;
+    border-bottom: 1px solid #c2cfdc !important;
+}
+
+.project-article div.big.border {
+    border: none !important;
+    border-bottom: 1px solid #C2CFDC !important;
 }
 
 /* .project-article p:not(.big):not(.insert) {
@@ -6801,33 +6807,33 @@ body.full-main .competencies:not(:last-child) {
 }
 
 .modal-certificates .btn-cnt .btn.type-1 {
-    background-color: #edf3f9;
-    color: #165da1;
+    background-color: #edf3f9 !important;
+    color: #165da1 !important;
 }
 
 .modal-certificates .btn-cnt .btn.type-2 {
-    background-color: #edf3f9;
-    color: #165da1;
+    background-color: #edf3f9 !important;
+    color: #165da1 !important;
 }
 
 .modal-certificates .btn-cnt .btn.type-3 {
-    background-color: #50ade2;
-    color: #ffffff;
+    background-color: #8399a5 !important;
+    color: #ffffff !important;
 }
 
 .modal-certificates .btn-cnt .btn.type-4 {
-    background-color: #67c15e;
-    color: #ffffff;
+    background-color: #67c15e !important;
+    color: #ffffff !important;
 }
 
 .modal-certificates .btn-cnt .btn.type-5 {
-    background-color: #157dc3;
-    color: #ffffff;
+    background-color: #157dc3 !important;
+    color: #ffffff !important;
 }
 
 .modal-certificates .btn-cnt .btn.type-6 {
-    background-color: #5181b8;
-    color: #ffffff;
+    background-color: #5181b8 !important;
+    color: #ffffff !important;
 }
 
 .modal-certificates .btn-cnt .icon-btn {
