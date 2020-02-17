@@ -81,7 +81,8 @@
 
 
 .btn {
-    color: white !important;
+    
+    box-shadow: none !important;
 }
 
 .u-btn-white {
@@ -2737,6 +2738,14 @@ a.tasks-project__item:hover .icon-item .path {
     -webkit-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
     opacity: 0;
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .tasks-project__item .plus-item {
+        opacity: 1 !important;
+    }
 }
 
 .tasks-project__item .plus-item::before {
@@ -2832,6 +2841,7 @@ a.tasks-project__item:hover .icon-item .path {
     content: '';
     position: absolute;
     left: 0;
+    
     background-color: #ffc003;
     border-radius: 50%;
 }

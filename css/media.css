@@ -2561,11 +2561,11 @@
     }
 
     .type-project__info .list-info li {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .type-project__info .list-info li::before {
-        top: 9px;
+        top: 10px;
         width: 6px;
         height: 6px;
     }
