@@ -44,6 +44,17 @@
 }
 
 
+.pictures-block__pictures-list-item--small {
+    width: 25%;
+}
+
+@media screen and (max-width: 1200px) {
+    .pictures-block__pictures-list-item--small {
+        width: 50%;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .pictures-block__pictures-list-item {
         width: 100%;
@@ -68,6 +79,17 @@
     display: block;
 }
 
+.pictures-block__pictures-list-item--small .pictures-block__pictures-card-image-container::after {
+    padding-bottom: 75%;
+}
+
+@media screen and (max-width: 600px) {
+    .pictures-block__pictures-list-item--small .pictures-block__pictures-card-image-container::after {
+        padding-bottom: 56.25%;
+    }
+}
+
+
 
 .pictures-block__pictures-card-image {
     width: 100%;
@@ -83,8 +105,14 @@
     font-size: 26px;
     line-height: 1.33;
     margin: 0;
-    margin-bottom: 10px;
-    min-height: 35px;
+    margin-bottom: 15px;
+    min-height: 40px;
+    font-weight: 300;
+}
+
+
+.pictures-block__pictures-list-item--small .pictures-block__pictures-card-title {
+    min-height: auto;
 }
 
 .pictures-block__hr {
@@ -96,6 +124,18 @@
     margin-bottom: 15px;
 }
 
+
+.pictures-block__pictures-list-item--small .pictures-block__hr {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .pictures-block__pictures-list-item--small .pictures-block__hr {
+        display: block;
+    }
+}
+
 .pictures-block__pictures-card-text {
     font-family: 'PF Agora Sans Pro';
     font-size: 20px;
@@ -103,13 +143,18 @@
 
 .pictures-block__pictures-card-content {
     
-    padding: 38px;
+    padding: 30px 38px;
     text-align: left;
     display: flex;
 
     flex-direction: column;
     
 }
+
+
+/* .pictures-block__pictures-list-item--small .pictures-block__pictures-card-content {
+    padding: 25px 35px;
+} */
 
 
 @media screen and (max-width: 1200px) {
