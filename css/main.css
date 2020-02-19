@@ -1,4 +1,14 @@
 
+.competencies-for-slider .slick-track {
+    align-items: flex-start !important;
+}
+
+
+@media screen and (max-width: 600px) {
+    .competencies-for__info {
+        margin-bottom: 0 !important;
+    }
+}
 
 
 .for-whom__heading {
