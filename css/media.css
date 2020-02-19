@@ -4480,13 +4480,13 @@
     }
 
     .type-project__info .list-info li::before {
-        top: 6px;
+        top: 10px;
         width: 4px;
         height: 4px;
     }
 
     .type-project__info .list-info li {
-        font-size: 12px;
+        font-size: 16px;
         padding-left: 14px;
     }
 
@@ -4587,9 +4587,7 @@
         padding-right: 20px;
     }
 
-    .tasks-project__item .plus-item {
-        display: none;
-    }
+   
 
     .tasks-project {
         padding-top: 33px;
