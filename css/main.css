@@ -1,3 +1,136 @@
+
+
+
+.for-whom__heading {
+    margin: 0;
+}
+
+.for-whom__cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+    padding: 0;
+}
+
+.for-whom__cards-list-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.for-whom__card {
+    flex-grow: 1;
+}
+
+
+.for-whom__card-title {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 1.33;
+    margin: 0;
+    margin-bottom: 10px;
+    min-height: 60px;
+}
+
+
+
+
+
+.for-whom__text {
+    font-family: 'PF Agora Sans Pro';
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.for-whom__text > * {
+    margin: 15px 0;
+}
+
+.for-whom__text > *:first-child {
+    margin-top: 0;
+}
+.for-whom__text > *:last-child {
+    margin-bottom: 0;
+}
+
+
+.for-whom__link {
+    font-size: 14px;
+    line-height: 1.4;
+    border-bottom: 1px solid #FFC003;
+    transition: background-color .2s, border-color .2s;
+}
+
+
+.for-whom__link:link,
+.for-whom__link:visited {
+    color: #FFC003;
+}
+.for-whom__link:hover,
+.for-whom__link:active {
+    color: #1d62a6;
+    border-color: #1d62a6;
+}
+
+.for-whom__row {
+    display: flex;
+
+}
+
+
+
+
+.for-whom__left-column {
+    width: 300px;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+
+.for-whom__right-column {
+    width: 50%;
+    flex-grow: 1;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .for-whom__row { 
+        flex-direction: column;
+    }
+    .for-whom__left-column {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .for-whom__right-column {
+        width: 100%;
+        flex-grow: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .for-whom__card-title { 
+        min-height: auto;
+        font-size: 22px;
+    }
+
+
+    .for-whom__cards-list-item { 
+        width: 100%;
+    }
+
+    .for-whom__text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
 .columns-with-text__heading {
     margin-bottom: 30px;
 }
@@ -21,6 +154,7 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    
     margin: -14px;
 }
 
