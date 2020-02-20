@@ -3290,13 +3290,13 @@
     }
 
     .about-type-info .cnt-info ul li::before {
-        top: 5px;
+        top: 6px;
         width: 4px;
         height: 4px;
     }
 
     .about-type-info .cnt-info ul li {
-        font-size: 12px;
+        font-size: 16px;
         padding-left: 14px;
     }
 
@@ -3940,7 +3940,7 @@
     }
 
     .about-type-info .small-info {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .about-type-gallery {
