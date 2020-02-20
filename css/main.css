@@ -1,7 +1,26 @@
+@media screen and (max-width: 600px) {
+    .cite-project p {
+        font-size: 18px;
+        line-height: 1.33;
+    }
 
 
+    .type-project__column.column-img {
+        order: 1;
+        margin-top: 20px;
+    }
 
 
+    .type-project__column.column-info {
+        margin-top: 0;
+    }
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .pictures-block__shifted-cards-list {
     display: flex;

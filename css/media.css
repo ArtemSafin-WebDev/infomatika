@@ -2561,11 +2561,11 @@
     }
 
     .type-project__info .list-info li {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .type-project__info .list-info li::before {
-        top: 10px;
+        top: 7px;
         width: 6px;
         height: 6px;
     }
@@ -3326,7 +3326,7 @@
     }
 
     .article {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .project-article p.big {
@@ -3804,7 +3804,7 @@
     }
 
     .article p:not(.big):not(.insert) {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .article p.big:not(.insert) {
