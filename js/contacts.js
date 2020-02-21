@@ -96,9 +96,10 @@ function initializeMap() {
 
 		var infoBubble = new InfoBubble({
 			map: map,
-			minWidth: 'auto',
-			minHeight: 135,
-			maxHeight: 250,
+			// minWidth: 'auto',
+			minHeight: 165,
+			// maxHeight: 250,
+			maxHeight: 'auto',
 			content: contentString,
 			position: point,
 			shadowStyle: 0,

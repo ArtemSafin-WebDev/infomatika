@@ -6609,7 +6609,7 @@ body.full-main .competencies:not(:last-child) {
 
 .contacts-maps__hint {
     position: relative;
-    /*max-width: 424px;*/
+    max-width: 330px;
     /*background-color: #FFFFFF;*/
     /*border-radius: 10px;*/
     color: #000000;
