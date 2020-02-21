@@ -1254,6 +1254,9 @@ $(function() {
         new Swiper(container, {
             watchOverflow: true,
             slidesPerView: 'auto',
+            autoplay: true,
+            speed: 700,
+            loop: true,
             spaceBetween: 10,
             navigation: {
                 nextEl: slider.querySelector('.project-gallery__slider-arrow--next'),
