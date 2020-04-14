@@ -10415,7 +10415,7 @@ summary {
 }
 
 .mobile-burger {
-    position: absolute;
+    /* position: absolute; */
     right: 20px;
     top: -16px;
     z-index: 1;
@@ -11740,7 +11740,7 @@ html.is-open-sidebar .mobile-burger span {
 }
 
 .headline {
-    padding: 30px 0 30px;
+    padding: 20px 0 20px;
 }
 
 .main {

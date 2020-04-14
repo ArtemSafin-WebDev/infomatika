@@ -1,3 +1,25 @@
+.headline__yt-link {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    display: none;
+}
+
+
+@media screen and (max-width: 568px) {
+    .headline__yt-link {
+        display: flex;
+    }
+}
+@media screen and (max-width: 360px) {
+    .headline__yt-link {
+        display: none;
+    }
+}
 
 .contacts-link-block {
     margin-top: 10px;
@@ -2937,6 +2959,13 @@ img {
 
 .headline__logo img {
     width: 256px;
+   
+}
+
+@media only screen and (max-width: 480px) {
+    .headline__logo img {
+        width: 100%;
+    } 
 }
 
 .logo-slider__card--grayscale img {
